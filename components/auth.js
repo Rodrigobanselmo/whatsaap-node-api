@@ -41,6 +41,11 @@ router.get('/getqr', (req,res) => {
                 res.end();
             }
         })
+        if(err){
+            
+        }else{
+            
+        }
     });
 });
 
