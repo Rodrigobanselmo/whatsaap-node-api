@@ -2,6 +2,6 @@
     "port":5001,
     "webhook":{
         "enabled":true,
-        "path":"http://https://us-central1-reconecta-dev.cloudfunctions.net/mailer/teste"
+        "path":"https://us-central1-reconecta-dev.cloudfunctions.net/mailer/teste"
     }
 }
