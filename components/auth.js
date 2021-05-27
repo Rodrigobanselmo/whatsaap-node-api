@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const qrcode = require('qrcode-terminal');
 const fs = require('fs');
 
 router.get('/checkauth', async (req, res) => {
@@ -46,6 +47,13 @@ router.get('/getqr', (req,res) => {
         }else{
             
         }
+    });
+});
+
+router.get('/qrCode', (req,res) => {
+    client.on('qr', qr => {
+        qrcode.generate(qr, { small: true });
+        console.log('qr',qr)
     });
 });
 
