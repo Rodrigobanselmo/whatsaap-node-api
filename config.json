@@ -1,7 +1,7 @@
 {
-    "port":5000,
+    "port":5001,
     "webhook":{
-        "enabled":false,
-        "path":""
+        "enabled":true,
+        "path":"http://localhost:5000/reconecta-dev/us-central1/mailer/teste"
     }
 }

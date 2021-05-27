@@ -1,4 +1,4 @@
 node_modules
-session.json
+# session.json
 temp
 components/last.qr

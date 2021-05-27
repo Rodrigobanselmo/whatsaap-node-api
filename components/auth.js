@@ -50,11 +50,11 @@ router.get('/getqr', (req,res) => {
     });
 });
 
-router.get('/qrCode', (req,res) => {
-    client.on('qr', qr => {
-        qrcode.generate(qr, { small: true });
-        console.log('qr',qr)
-    });
-});
+// router.get('/qrCode', (req,res) => {
+//     client.on('qr', qr => {
+//         qrcode.generate(qr, { small: true });
+//         console.log('qr',qr)
+//     });
+// });
 
 module.exports = router;
