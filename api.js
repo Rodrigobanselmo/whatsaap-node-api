@@ -104,6 +104,13 @@ sessionData = SESSION_FILE_PATH
 
 // Use the saved values
 const client = new Client({
+    puppeteer: {
+        headless: true,
+        args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--unhandled-rejections=strict'
+    ]},
     session: sessionData
 });
 
