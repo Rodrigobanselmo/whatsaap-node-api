@@ -104,6 +104,7 @@ sessionData = SESSION_FILE_PATH
 
 // Use the saved values
 const client = new Client({
+    session: sessionData,
     puppeteer: {
         headless: true,
         args: [
@@ -111,7 +112,6 @@ const client = new Client({
             '--disable-setuid-sandbox',
             '--unhandled-rejections=strict'
     ]},
-    session: sessionData
 });
 
 // Save session values to the file upon successful auth
